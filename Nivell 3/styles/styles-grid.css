@@ -1,0 +1,286 @@
+body {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%2392d25c' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    box-sizing: border-box;
+    width: 80%;
+    padding: 0 15px;
+    margin: auto;
+    background-color: #b8e994;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'articles'
+        'footer';
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+        'header1'
+        'header2';
+    margin-bottom: 15px;
+}
+
+#articles {
+    grid-area: articles;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: grid;
+    grid-template-areas:
+        'article-group article-group article-group aside';
+}
+
+footer.page-footer {
+    grid-area: footer;
+    width: 100%;
+    padding: 24px 0px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#header1 {
+    grid-area: header1;
+    display: grid;
+    grid-template-areas:
+        'logo menu menu menu menu redes';
+    padding: 10px 0;
+}
+
+#header2 {
+    grid-area: header2;
+    height: 399px;
+    padding: 1.5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/fons.jpg");
+    background-repeat: no-repeat;
+    background-attachment: no-attachment;
+    background-position: center;
+    background-size: cover;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#logo img {
+    width: 50px;
+    height: auto;
+    margin-left: 25%;
+}
+
+#menu {
+    grid-area: menu;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+i {
+    margin-right: 5px;
+}
+
+#redes {
+    grid-area: redes;
+    margin-top: 15px;
+}
+
+#redes a {
+    text-decoration: none;
+}
+
+#redes img {
+    margin-right: 2vw;
+    cursor: pointer;
+    width: 30px;
+    height: auto;
+}
+
+.article-group {
+    grid-area: article-group;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas:
+        'article1 article2'
+        'article3 article4'
+        'art-footer art-footer';
+    padding: 10px 30px;
+}
+
+div.article-group article {
+    border: 1px solid black;
+    background-color: #b8e994;
+    margin-top: 1.5vh;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+aside {
+    grid-area: aside;
+    padding-top: 25px;
+    margin-right: 15px;
+}
+
+aside div {
+    background-color: #b8e994;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#article1 {
+    grid-area: article1;
+}
+
+#article2 {
+    grid-area: article2;
+}
+
+#article3 {
+    grid-area: article3;
+}
+
+#article4 {
+    grid-area: article4;
+}
+
+h1 {
+    color: rgba(255, 0, 0, 0.3);
+    font-family: 'PT Serif', serif;
+}
+
+
+h3 {
+    padding-left: 1px;
+    margin-top: -4px;
+    background-color: #e55039;
+    font-family: 'PT Serif', serif;
+    color: white;
+}
+
+h4 {
+    font-family: 'PT Serif', serif;
+    color: white;
+    margin-left: 10px;
+}
+
+p {
+    padding: 0px 10px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+div.article-group footer {
+    grid-area: art-footer;
+    background-color: #e55039;
+    color: white;
+    width: 100%;
+    margin: 1.5vh 0;
+    text-align: center;
+}
+
+
+/***** FI estils per defecte *****/
+
+/* Estils per mòbil */
+
+@media (max-width: 767px) {
+    main {
+        width: 95%;
+    }
+
+    #header1 {
+        grid-template-areas:
+            'logo menu redes';
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #logo img {
+        width: 30px;
+    }
+    
+    #menu ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #redes img {
+        width: 20px;
+    }
+
+    #menu, p {
+        font-size: 0.8em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    #articles {
+        grid-template-areas:
+            'article-group'
+            'aside';
+    }
+
+    .article-group {
+        padding: 10px 10px;
+    }
+
+    aside {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 25px;
+    }
+
+}
+
+/***** FI estils per mòbil *****/
+
+/* Estils per tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #logo img {
+        width: 40px;
+    }
+
+    #menu ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #redes img {
+        width: 20px;
+    }
+
+    #articles {
+        grid-template-areas:
+            'article-group'
+            'aside';
+    }
+
+    aside {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+/***** FI estils per tablet *****/

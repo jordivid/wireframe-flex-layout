@@ -1,0 +1,192 @@
+/* Estils per defecte: pantalla gran */
+
+main{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+header, #article-group, footer {
+    background-color:#000000;
+    width: 95%;
+    margin: auto;
+    margin-top: 0.75vh;
+    box-sizing: border-box;
+    padding: 1.5vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#header1 {
+    background-color: #2d3436;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5vh 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#header1 div {
+    background-color:#ff6348;
+    height: 1.5vh;
+}
+
+#header1A {
+    width: 14%;
+}
+
+#header1B {
+    width: 66%;
+}
+
+#header1C {
+    width: 14%;
+}
+
+#header2 {
+    background-color: #fa8424;
+    width: 100%;
+    margin-top: 0.75vh;
+    box-sizing: border-box;
+    padding: 1.5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header2 div {
+    background-color:#eccc68;
+    width: 97%;
+    height: 1.5vh;
+}
+
+#article-group {
+    display: flex;
+    box-sizing: border-box;
+    width: 95%;
+    justify-content: space-between;
+    padding: 1.5vh;
+}
+
+
+
+#article-group div.section-group {
+    background-color:#4b4b4b;
+    width: 64vw;
+}
+
+#article-group aside {
+    background-color: #ee5253;
+    width: 28vw
+}
+
+div.section-group {
+    background-color:#4b4b4b;
+    width: 64vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+article {
+    background-color: #3867d6;
+    width: 47%;
+    height: 1.5vh;
+    margin-top: 1.5vh;
+}
+
+div.section-group footer {
+    background-color: #45aaf2;
+    width: 96%;
+    height: 1.5vh;
+    margin: 1.5vh 0;
+    padding: 0;
+}
+
+#article-group aside {
+    background-color:#ff4d4d;
+    margin-left: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#article-group aside div {
+    background-color: #f5cd79;
+    width: 94%;
+    height: 1.5vh;
+    margin-top: 1.5vh;
+}
+
+footer.page-footer div {
+    background-color: #e58e26;
+    width: 100%;
+    height: 1.5vh;
+}
+
+/***** FI estils per defecte *****/
+
+/* Estils per mòbil */
+@media (max-width: 767px) {
+    #header1A {
+        width: 20%;
+    }
+    
+    #header1B {
+        width: 45%;
+    }
+    
+    #header1C {
+        width: 20%;
+    }
+}
+
+/***** FI estils per mòbil *****/
+
+/* Estils per tablet */
+@media (max-width: 1024px) {
+    #article-group {
+        background-color: #fff200;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #article-group div.section-group {
+        width: 100%;
+    }
+
+    #article-group aside {
+        background-color: #ff6b6b;
+        height: 7.5vh;
+        margin-top: 1.5vh;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #header1A {
+        width: 16%;
+    }
+    
+    #header1B {
+        width: 62%;
+    }
+    
+    #header1C {
+        width: 16%;
+    }
+
+  
+}
+
+/***** FI estils per tablet *****/
